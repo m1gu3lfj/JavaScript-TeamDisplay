@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">  
+<title>Liga 12</title>
+</head>
+<body style="background-color: skyblue">
+    <script src="src/equipos.js"></script>
+    <script src="src/carga.js"></script>
+
+    <h1>Equipos de la liga</h1>
+    <table>
+    <tr>
+    <td>
+        Selecciona equipo:
+    </td>    
+    <td>    
+        <select id="equipo">
+            <option value="1">Real Madrid</option>
+            <option value="2">Milan</option>
+            <option value="3">Liverpool</option>
+            <option value="4">Bayern München</option>
+            <option value="5">Barcelona</option>
+            <option value="6">Manchester United</option>
+            <option value="7">Inter</option>
+            <option value="8">Juventus</option>
+        </select>
+    </td>
+    <td>
+        <input type="button" value="Mostrar datos" onclick="cargarDatos()">
+    </td>
+    </tr>
+    </table>
+    <br>
+    <table id="tablaEquipo" border="1px black" style="display:none" >
+    <tr>
+        <th width="20">#</th>
+        <th width="200">Nombre</th>
+        <th width="85">Posicion</th>
+        <th>Pais</th>
+    </tr>    
+    <tr>
+        <td id="d1" align="right"></td>
+        <td id="n1"></td>
+        <td id="p1"></td>
+        <td id="n1"><img id="f1" height="20" width="30"></td>
+    </tr>
+    <tr>
+        <td id="d2" align="right"></td>
+        <td id="n2"></td>
+        <td id="p2"></td>
+        <td id="n2"><img id="f2" height="20" width="30"></td>
+    </tr>
+    <tr>
+        <td id="d3" align="right"></td>
+        <td id="n3"></td>
+        <td id="p3"></td>
+        <td id="n3"><img id="f3" height="20" width="30"></td>
+    </tr>
+    <tr>
+        <td id="d4" align="right"></td>
+        <td id="n4"></td>
+        <td id="p4"></td>
+        <td id="n4"><img id="f4" height="20" width="30"></td>
+    </tr>
+    <tr>
+        <td id="d5" align="right"></td>
+        <td id="n5"></td>
+        <td id="p5"></td>
+        <td id="n5"><img id="f5" height="20" width="30"></td>
+    </tr>
+    </table>
+    <br>
+    <input id="botonBorrar" type="button" value="Borrar tabla" style="display: none" onclick="borrarTabla()">
+</body>
+</html>
